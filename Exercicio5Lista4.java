@@ -32,7 +32,7 @@ public class Exercicio5Lista4 {
         double distMan = distanciaManhattan(x1, y1, x2, y2);
 
         System.out.println("Distância Euclidiana: " + distEuc);
-        System.out.println("Distância Manhattan: " + distMan)
+        System.out.println("Distância Manhattan: " + distMan);
 
     }
 
