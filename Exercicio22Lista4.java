@@ -5,7 +5,7 @@ public class Exercicio22Lista4 {
     Scanner input = new Scanner(System.in);
 
     /*
-     *  Faça um programa que leia um valor inteiro e positivo (garanta isso),
+    Faça um programa que leia um valor inteiro e positivo (garanta isso),
     calcule e escreva o seu somatório. O cálculo do somatório deve ser feito
     por meio de um método.
     */
@@ -17,20 +17,10 @@ public class Exercicio22Lista4 {
         return;
     }
 
-    int somatorio = somatorio(num);
+    int somatorio = Operacoes.somatorio(num);
 
     System.out.println("Somatório do valor: " + somatorio);
 
-    
-
     }
-    public static int somatorio(int num){
-
-        int somatorio = 0;
-        for(int i = 1;i <= num; i++){
-            somatorio = somatorio + i;
-        }
-        return somatorio;
-    }
-    
+   
 }
