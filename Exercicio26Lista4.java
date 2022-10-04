@@ -18,38 +18,12 @@ public class Exercicio26Lista4 {
             return;
         }
 
-        int divisores = divisores(num);
+        int divisores = Operacoes.divisores(num);
 
-        String primo = primo(divisores);
+        boolean primo = Operacoes.primo(divisores);
 
         System.out.printf("%S",primo);
 
-    }
-
-    public static int divisores(int num) {
-
-        int divisores = 0;
-
-        for (int i = 1; i <= num; i++) {
-            if (num % i == 0) {
-                divisores++;
-            }
-
-        }
-        return divisores;
-    }
-
-    public static String primo(int divisores){
-
-        String primo;
-
-        if(divisores == 2){
-            primo = "Primo";
-        }
-        else{
-            primo = "Não é primo";
-        }
-        return primo;
     }
 
 }

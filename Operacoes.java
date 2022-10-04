@@ -31,4 +31,16 @@ public class Operacoes {
         }
     
     }
+    public static boolean primo(int divisores){
+
+        boolean primo;
+
+        if(divisores == 2){
+            primo = true;
+        }
+        else{
+            primo = false;
+        }
+        return primo;
+    }
 }
