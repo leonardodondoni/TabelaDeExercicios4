@@ -43,4 +43,23 @@ public class Operacoes {
         }
         return primo;
     }
+    public static double exercise42(int num){
+
+        double S = 0, totalS = 0;;
+
+        for (int i = 1; i <= num; i++){
+            S = 1.0/i;
+            totalS = totalS + S;
+        }
+        return totalS;
+    }
+    public static String reverse(String exercicio){
+
+        int length = exercicio.length();
+
+        String reverse = "";
+        for (int i = length - 1 ; i >= 0 ; i--)
+          reverse = reverse + exercicio.charAt(i);
+        return reverse;
+    }
 }

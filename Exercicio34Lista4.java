@@ -11,20 +11,10 @@ public class Exercicio34Lista4 {
 
     System.out.println("Escreva uma string: ");
     String exercicio = input.nextLine();
-    String reverso = reverse(exercicio);
+    String reverso = Operacoes.reverse(exercicio);
 
     System.out.println(reverso);
     
     }
-
-    public static String reverse(String exercicio){
-
-        int length = exercicio.length();
-
-        String reverse = "";
-        for (int i = length - 1 ; i >= 0 ; i--)
-          reverse = reverse + exercicio.charAt(i);
-        return reverse;
-    }
-    
+ 
 }

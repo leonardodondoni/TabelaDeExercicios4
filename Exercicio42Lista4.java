@@ -23,19 +23,9 @@ meio de um método.
         return;
     }
 
-    double totalS = metodo(num);
+    double totalS = Operacoes.exercise42(num);
     System.out.println(totalS);
 
     }
-    public static double metodo(int num){
 
-        double S = 0, totalS = 0;;
-
-        for (int i = 1; i <= num; i++){
-            S = 1.0/i;
-            totalS = totalS + S;
-        }
-        return totalS;
-    }
-    
 }
