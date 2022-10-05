@@ -20,7 +20,7 @@ public class Operacoes {
         }
         return divisores;
     }
-    public static void divisoresTela(int num) {
+    public static boolean divisoresTela(int num) {
 
 
         for (int i = 1; i <= num; i++) {
@@ -31,7 +31,7 @@ public class Operacoes {
         }
     
     }
-    public static boolean primo(int divisores){
+    public static int primo(int divisores){
 
         boolean primo;
 
