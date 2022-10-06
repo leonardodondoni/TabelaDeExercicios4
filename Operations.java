@@ -223,4 +223,19 @@ public class Operations {
         }
         return value;
     }
+    public static boolean perfectNumberChecker(int num){
+
+        int soma = 0;
+        for(int i = 1;i <= num;i ++){
+            
+            if(num % i == 0){
+                soma = soma + i;
+            }
+        }
+            if (soma - num == num)
+			return true;
+		else
+			return false;
+    
+    }
 }
