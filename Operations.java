@@ -211,9 +211,16 @@ public class Operations {
     }
     public static boolean primo(int num){
         boolean primo = true;
-        if(num == 2)
+        if(Operations.divisores(num) == 2)
         primo = true;
         else primo = false;
         return primo;
+    }
+    public static int values(int num){
+        int value = 1;
+        for(int i = 1;i < num;i++){
+            value++;
+        }
+        return value;
     }
 }
