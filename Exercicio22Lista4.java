@@ -17,7 +17,7 @@ public class Exercicio22Lista4 {
         return;
     }
 
-    int somatorio = Operacoes.somatorio(num);
+    int somatorio = Operations.somatorio(num);
 
     System.out.println("Somatório do valor: " + somatorio);
 

@@ -30,13 +30,7 @@ public class Exercicio4Lista4 {
             return;
         }
 
-        System.out.println("Segundos: " +segundos(horas,minutos,segundos));
-    }
-
-    public static int segundos(int horas, int minutos, int segundos) {
-
-        segundos = horas * 3600 + minutos * 60 + segundos;
-        return segundos;
+        System.out.println("Segundos: " +Operations.segundos(horas,minutos,segundos));
     }
 
 }

@@ -18,9 +18,9 @@ public class Exercicio26Lista4 {
             return;
         }
 
-        int divisores = Operacoes.divisores(num);
+        int divisores = Operations.divisores(num);
 
-        boolean primo = Operacoes.primo(divisores);
+        boolean primo = Operations.primo(divisores);
 
         System.out.printf("%S",primo);
 

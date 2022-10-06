@@ -41,20 +41,10 @@ public class Exercicio14Lista4 {
 
         int horarioFinalEmMinutos = (horasTermino * 60) + minutosTermino;
 
-        int duracaoTotal = duracao(horaroInicialEmMinutos, horarioFinalEmMinutos);
+        int duracaoTotal = Operations.duracao(horaroInicialEmMinutos, horarioFinalEmMinutos);
 
         System.out.printf("Duração total do jogo: %d horas e %d minutos", duracaoTotal/60, duracaoTotal%60);
 
     }
-    public static int duracao(int horaroInicialEmMinutos, int horarioFinalEmMinutos){
-
-        int duracaoTotal;
-
-        if (horaroInicialEmMinutos < horarioFinalEmMinutos)
-            duracaoTotal = horarioFinalEmMinutos - horaroInicialEmMinutos;
-        else {
-            duracaoTotal = 24 * 60 - horaroInicialEmMinutos + horarioFinalEmMinutos;
-        }
-        return duracaoTotal; 
-    }
+    
 }

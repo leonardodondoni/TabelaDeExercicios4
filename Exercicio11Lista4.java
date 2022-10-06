@@ -23,30 +23,11 @@ public class Exercicio11Lista4 {
         System.out.println("Saldo médio do cliente para calcular o valor de crédito disponível: ");
         double saldoMedio = input.nextInt();
 
-        double credito = credito(saldoMedio);
+        double credito = Operations.credito(saldoMedio);
 
         System.out.println("Crédito disponível: " + credito);
 
     }
 
-    public static double credito(double saldoMedio) {
-
-        double credito = 0;
-
-        if (saldoMedio < 501) {
-            credito = 0;
-        } else if (saldoMedio < 1501) {
-            credito = (saldoMedio * 10) / 100.0;
-        } else if (saldoMedio < 2501) {
-            credito = (saldoMedio * 15) / 100.0;
-        } else if (saldoMedio < 4001) {
-            credito = (saldoMedio * 20) / 100.0;
-        } else {
-            credito = (saldoMedio * 25) / 100.0;
-        }
-
-        return credito;
-
-    }
 
 }

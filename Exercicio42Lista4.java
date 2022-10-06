@@ -23,7 +23,7 @@ meio de um método.
         return;
     }
 
-    double totalS = Operacoes.exercise42(num);
+    double totalS = Operations.exercise42(num);
     System.out.println(totalS);
 
     }

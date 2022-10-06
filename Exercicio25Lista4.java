@@ -19,7 +19,7 @@ public class Exercicio25Lista4 {
             return;
         }
 
-        int divisores = Operacoes.divisores(num);
+        int divisores = Operations.divisores(num);
 
         System.out.println("Quantidade de divisores: " + divisores);
 

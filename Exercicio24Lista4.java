@@ -18,7 +18,7 @@ public class Exercicio24Lista4 {
         }
 
         System.out.println("Divisores de " + num);
-        Operacoes.divisoresTela(num);
+        Operations.divisoresTela(num);
     }
 
 }

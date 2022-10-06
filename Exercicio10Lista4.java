@@ -32,23 +32,10 @@ public class Exercicio10Lista4 {
         double alturaDouble = altura / 100.0;
 
         
-        System.out.println("Peso ideal: " + pesoIdeal(alturaDouble, sexo));
+        System.out.println("Peso ideal: " + Operations.pesoIdeal(alturaDouble, sexo));
         
 
-
-
     }
-    public static double pesoIdeal(double altura, double sexo){
-
-        double pesoIdeal = 0;
-
-        if (sexo == 1){
-            pesoIdeal = (72.7 * altura) - 58;
-        }
-        else{
-            pesoIdeal = (62.1 * altura) - 44.7;
-        }
-        return pesoIdeal;
-    }
+   
 
 }

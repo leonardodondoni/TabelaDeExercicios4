@@ -17,25 +17,7 @@ public class Exercicio2Lista4 {
         num2 = input.nextDouble();
         num3 = input.nextDouble();
 
-        System.out.print("Maior: " + maior(num1, num2, num3));
-    }
-
-    public static double maior(double n1, double n2, double n3) {
-
-        double maior = 0;
-
-        // maior = n1;
-        // if(n2>maior) maior = n2;
-        // if(n3>maior) maior = n3;
-
-        Double[] values = { n1, n2, n3 };
-        for (Double value : values) {
-            if (value > maior)
-                maior = value;
-        }
-
-        return maior;
-
+        System.out.print("Maior: " + Operations.maior(num1, num2, num3));
     }
 
 }

@@ -26,27 +26,13 @@ public class Exercicio29Lista4 {
             menor = n1;
         }
 
-        int intervalosPrimo = primosIntervalo(maior, menor);
+        int intervalosPrimo = Operations.primosIntervalo(maior, menor);
 
         System.out.println(intervalosPrimo);
       
         
         }
     
-
-    public static int primosIntervalo(int maior, int menor) {
-
-        int cont = 0;
-        for(;menor <= maior; menor++){
-            if(Operacoes.divisores(menor) == 2){
-                cont++;    
-            }
-
-        }
-
-        return cont;
-
-    }
 }    
 
 

@@ -12,17 +12,12 @@ public class Exercicio33Lista4 {
     System.out.println("Escreva uma string: ");
     String exercicio = input.nextLine();
 
-    String semVogais = semVogais(exercicio);
+    String semVogais = Operations.semVogais(exercicio);
 
     System.out.println(semVogais);
     
 
     }
 
-    public static String semVogais(String exercicio){
-
-        String semVogais = exercicio.replaceAll("[aeiouAEIOU]", "");
-        return semVogais;
-    }
     
 }

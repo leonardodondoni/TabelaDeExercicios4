@@ -11,7 +11,7 @@ public class Exercicio34Lista4 {
 
     System.out.println("Escreva uma string: ");
     String exercicio = input.nextLine();
-    String reverso = Operacoes.reverse(exercicio);
+    String reverso = Operations.reverse(exercicio);
 
     System.out.println(reverso);
     

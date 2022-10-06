@@ -37,28 +37,11 @@ public class Exercicio12Lista4 {
             System.out.println("Informe um tipo de média válido");
         }
 
-        double media = media(nota1, nota2, nota3, metodo);
+        double media = Operations.media(nota1, nota2, nota3, metodo);
 
         System.out.println("Baseado na sua escolha, a Média é: " + media);
         
 
-    }
-
-    public static double media(double nota1, double nota2, double nota3, int metodo){
-
-        double media;
-
-        if (metodo == 1){
-            media = (nota1 + nota2 + nota3) / 3.0;
-        }
-        else if (metodo == 2){
-            media = ((nota1 * 3) + (nota2 * 3) + (nota3 * 4)) / 10.0;
-        }
-        else{
-            media = 3.0 / ((1.0 / nota1) + (1.0 / nota2) + (1.0 /nota3));
-        }
-
-        return media;
     }
 
 }
