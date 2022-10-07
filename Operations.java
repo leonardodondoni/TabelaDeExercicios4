@@ -250,7 +250,7 @@ public class Operations {
 
     public static int fibonacci(int num) {
 
-        int n1 = 0, n2 = 1, fibonacci = 0;
+        int n1 = 0, n2 = 1, fibonacci = 1;
         for (int i = 2; i <= num; i++) {
             fibonacci = n1 + n2;
             n1 = n2;
@@ -278,5 +278,10 @@ public class Operations {
         else palindrome = false;
 
         return palindrome;
+    }
+    public static int fibonacciRecursivo(int num){
+        if(num <=2)
+        return 1;
+        return fibonacciRecursivo(num - 2) + fibonacci(num -1);
     }
 }
