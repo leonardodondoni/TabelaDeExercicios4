@@ -258,7 +258,6 @@ public class Operations {
         }
         return fibonacci;
     }
-
     public static int power(int x, int y) {
         int m;
         if (y == 0)
@@ -268,5 +267,16 @@ public class Operations {
             return m * m;
         } else
             return x * power(x, y - 1);
+    }
+    public static boolean isPalindrome(String word){
+
+        boolean palindrome;
+
+        if(Operations.reverse(word) == word){
+            palindrome = true;
+        }
+        else palindrome = false;
+
+        return palindrome;
     }
 }
