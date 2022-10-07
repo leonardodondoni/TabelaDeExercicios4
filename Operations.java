@@ -171,12 +171,13 @@ public class Operations {
         }
         return divisores;
     }
+
     public static int primosIntervalo(int maior, int menor) {
 
         int cont = 0;
-        for(;menor <= maior; menor++){
-            if(Operations.divisores(menor) == 2){
-                cont++;    
+        for (; menor <= maior; menor++) {
+            if (Operations.divisores(menor) == 2) {
+                cont++;
             }
 
         }
@@ -184,58 +185,88 @@ public class Operations {
         return cont;
 
     }
-    public static String semVogais(String exercicio){
+
+    public static String semVogais(String exercicio) {
 
         String semVogais = exercicio.replaceAll("[aeiouAEIOU]", "");
         return semVogais;
     }
-    public static String reverse(String exercicio){
+
+    public static String reverse(String exercicio) {
 
         int length = exercicio.length();
 
         String reverse = "";
-        for (int i = length - 1 ; i >= 0 ; i--)
-          reverse = reverse + exercicio.charAt(i);
+        for (int i = length - 1; i >= 0; i--)
+            reverse = reverse + exercicio.charAt(i);
         return reverse;
     }
-    public static double exercise42(int num){
 
-        double S = 0, totalS = 0;;
+    public static double exercise42(int num) {
 
-        for (int i = 1; i <= num; i++){
-            S = 1.0/i;
+        double S = 0, totalS = 0;
+        ;
+
+        for (int i = 1; i <= num; i++) {
+            S = 1.0 / i;
             totalS = totalS + S;
         }
         return totalS;
 
     }
-    public static boolean primo(int num){
+
+    public static boolean primo(int num) {
         boolean primo = true;
-        if(Operations.divisores(num) == 2)
-        primo = true;
-        else primo = false;
+        if (Operations.divisores(num) == 2)
+            primo = true;
+        else
+            primo = false;
         return primo;
     }
-    public static int values(int num){
+
+    public static int values(int num) {
         int value = 1;
-        for(int i = 1;i < num;i++){
+        for (int i = 1; i < num; i++) {
             value++;
         }
         return value;
     }
-    public static boolean perfectNumberChecker(int num){
+
+    public static boolean perfectNumberChecker(int num) {
 
         int soma = 0;
-        for(int i = 1;i <= num;i ++){
-            
-            if(num % i == 0){
+        for (int i = 1; i <= num; i++) {
+
+            if (num % i == 0) {
                 soma = soma + i;
             }
         }
-            if (soma - num == num)
-			return true;
-		else
-			return false;
-    
+        if (soma - num == num)
+            return true;
+        else
+            return false;
+
+    }
+
+    public static int fibonacci(int num) {
+
+        int n1 = 0, n2 = 1, fibonacci = 0;
+        for (int i = 2; i <= num; i++) {
+            fibonacci = n1 + n2;
+            n1 = n2;
+            n2 = fibonacci;
+        }
+        return fibonacci;
+    }
+
+    public static int power(int x, int y) {
+        int m;
+        if (y == 0)
+            return 1;
+        if (y % 2 == 0) {
+            m = power(x, y / 2);
+            return m * m;
+        } else
+            return x * power(x, y - 1);
     }
 }
