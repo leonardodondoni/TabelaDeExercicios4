@@ -294,4 +294,13 @@ public class Operations {
         return 1;
         return fibonacciRecursivo(num - 2) + fibonacci(num -1);
     }
+    public static double exercise14(int x, int y){
+        double resultado = 0;
+        double totalResultado = 0;
+        for(int i = 1;i <= y; i++){
+            resultado = Math.pow(x , i) / i;
+            totalResultado = totalResultado + resultado;
+        }
+        return totalResultado;
+    }
 }
