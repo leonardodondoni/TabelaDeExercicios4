@@ -258,15 +258,11 @@ public class Operations {
         }
         return fibonacci;
     }
-    public static int power(int x, int y) {
-        int m;
+    public static double power(int x, int y) {
+    
         if (y == 0)
             return 1;
-        if (y % 2 == 0) {
-            m = power(x, y / 2);
-            return m * m;
-        } else
-            return x * power(x, y - 1);
+        else return x * power(x, y - 1);
     }
     public static boolean isPalindrome(String word){
 
@@ -290,7 +286,7 @@ public class Operations {
         if (num < 2){
             return 1;
         }
-        return calculoSRecursivo(num - 1) + calculoSRecursivo(num - 2);
+        return calculoSRecursivo(num - 1) + num / (2.0 * num - 1);
     }
 
     public static int fibonacciRecursivo(int num){
