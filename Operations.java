@@ -279,4 +279,17 @@ public class Operations {
 
         return palindrome;
     }
+    public static int somatorioR(int num){
+        if (num < 2){
+            return 1;
+        }
+        return somatorioR(num - 1) + num;
+    }
+    public static double calculoSRecursivo(int num){
+        if (num < 2){
+            return 1;
+        }
+        return calculoSRecursivo(num - 1) + calculoSRecursivo(num - 2);
+    }
+
 }
